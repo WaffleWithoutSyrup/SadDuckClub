@@ -338,14 +338,15 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        align-items: center;
         background-color: #e3a485;
-        width: 70px;
-        margin: 10px;
+        width: 90px;
+        margin: 5px;
         margin-bottom: 0;
-        padding: 5px;
         border: 5px #614226 solid;
-        border-top-left-radius: 30%;
-        border-top-right-radius: 30%;
+        border-bottom: none;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
         position: sticky;
         bottom: 0px;
         top: 1px;
@@ -353,6 +354,7 @@
     }
     .hongo{
         align-self: center ;
+        width: 80px;
     }
     a{
         text-decoration: #e3a485;
