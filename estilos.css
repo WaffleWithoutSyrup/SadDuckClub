@@ -43,7 +43,7 @@
         background-color: #7c8b76;
 
     }
-    .casa{
+    .menu__inicio{
         width: 10%;
         text-align: center;
         padding: 20px;
@@ -52,19 +52,19 @@
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    .boton{
+    .menu__boton{
         width: 15%;
         text-align: center;
         padding: 20px;
         margin: 2%;
     }
-    .casa a:hover{
+    .menu__inicio a:hover{
         color: #4f200e;
     }
-    .boton a:hover{
+    .menu__boton a:hover{
         color: #4f200e;
     }
-    .co{
+    .menu__boton__co{
         margin-right: 5%;
     }
      
@@ -86,11 +86,13 @@
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        color: #4f200e;
     }
     h3{
         font-size: 30px;
         font-family: 'Pangolin', cursive;
         padding: 2%;
+        color: #4f200e;
     }
     .intro{
         width: 400px;
@@ -133,14 +135,24 @@
     .indext{
         grid-area: intro;
     }
-    .cara{
+    .index__cara{
         grid-area: emoji;
         align-self: center;
         justify-self: center;
+        
+        animation: cara-gira infinite 1s linear alternate;
     }
-    .cara:hover{
-        transform: rotate(-15deg) scale(1.2,1.2);
-        transition: 2seg;
+    @keyframes cara-gira {
+        from{
+            transform: rotate(5deg) scale(1.2,1.2);
+        }
+        50%{
+            transform: rotate(-5deg) scale(1,1);
+        }
+        to{
+            transform: rotate(-15deg) scale(1.2,1.2);
+        }
+        
     }
     .streamin{
         grid-area: stream;
@@ -201,6 +213,17 @@
     .mi {
         grid-area: mi;
         grid-column: 1/3;
+        animation: 0.5s sobre-mi infinite alternate linear;
+        color: #4f200e;
+    }
+    @keyframes sobre-mi {
+        from{
+            transform: rotate(-10deg) translateX(-10px);
+        }
+        to{
+            transform: rotate(10deg) translateX(10px);
+        }
+        
     }
     .waf{
         grid-area: waf;
