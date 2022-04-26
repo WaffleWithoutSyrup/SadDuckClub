@@ -23,6 +23,9 @@
         padding: 10px;
         width: 15%;
     }
+    .logo:hover{
+        transform: scale(1.2,1.2);
+    }
     .menu{
         font-family: 'Pangolin', cursive;
         background-color: #647966;
@@ -445,6 +448,9 @@
     .logo{
         width: 10%;
     }  
+    .logo:hover{
+        transform: scale(1.2,1.2);
+    }
     .menu{
         font-family: 'Pangolin', cursive;
         background-color: #647966;
@@ -724,6 +730,9 @@ fieldset{
     .logo{
         width: 50%;
     }  
+    .logo:hover{
+        transform: scale(1.2,1.2);
+    }
     .menu{
         font-family: 'Pangolin', cursive;
         background-color: #647966;
