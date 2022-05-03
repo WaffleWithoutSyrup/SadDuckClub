@@ -20,7 +20,7 @@ nav a{
 }
 nav li{
     background-color: #7c8b76;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
 }
 nav a:hover{
@@ -88,10 +88,13 @@ main{
 .b{
     grid-area: 4/2/5/3;
 }
-hr{
-    color: #243d28;
-    size: 10px;
-}
+div.hr {
+    height: 30px;
+    background: rgba(255, 255, 255, 0) url(./Media/hr.png) center repeat-x;
+  }
+  div.hr hr {
+    display: none;
+  }
 footer{
     background-color: #667b68;
 }
