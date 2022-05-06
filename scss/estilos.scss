@@ -3,9 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import "index";
 body{
     background-color: #c7d0bf;
+        h1{
+            font-family: 'Pangolin', cursive;
+            color: #4f200e;
+        }
+        h3{
+            font-family: 'Pangolin', cursive;
+            color: #4f200e;
+        }
+        p{
+            font-family: 'Coming Soon', cursive;
+        }
 }
-.menu{
-    background-color: #647966;
+header{
+    text-align: center;
+        .logo{
+            margin: 15px;
+            width: 15%;
+        }
+}
+nav{
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: #fff1e0;
+        font-family: 'Pangolin', cursive;
+    }
+    li{
+        background-color: #7c8b76;
+        padding: 5px;
+        margin: 5px;
+    }
+    a:hover{
+        color: #4f200e;
+    }
 }
