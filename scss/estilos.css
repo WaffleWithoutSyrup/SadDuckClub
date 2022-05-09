@@ -6,16 +6,16 @@
 }
 
 .recomendados {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 200px;
-  bottom: -200px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  top: 125px;
   background-color: #e6cdaf;
   border: #c29077 3px solid;
   border-radius: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 300px;
+  height: 500px;
+  overflow-y: scroll;
 }
 
 .recomendados h3 {
@@ -160,5 +160,88 @@ nav li {
 
 nav a:hover {
   color: #4f200e;
+}
+
+main {
+  padding-top: 25px;
+}
+
+footer {
+  background-color: #647966;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer form {
+  background-color: #7c8b76;
+  font-family: 'Coming Soon', cursive;
+  font-weight: 200;
+  color: #614226;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer form legend {
+  font-family: 'Pangolin', cursive;
+  color: #4f200e;
+}
+
+footer form fieldset {
+  margin: 5px;
+  padding: 20px;
+}
+
+footer form .enviar {
+  color: #4f200e;
+  font-family: 'Pangolin', cursive;
+  background-color: #e6cdaf;
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+footer .final {
+  background-color: #243d28;
+  color: #edd8bd;
+  font-family: 'Verdana', sans-serif;
+  font-size: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e2baa0 #c2907759;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #c2907759;
+  border: #c29077 2px solid;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e2baa0;
+  border-radius: 20px;
+  border: 1px solid #c29077;
 }
 /*# sourceMappingURL=estilos.css.map */
