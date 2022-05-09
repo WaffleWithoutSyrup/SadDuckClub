@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitacora del Pato Triste|SDC</title>
+    <title>Bitácora del Pato Triste|SDC</title>
     <link  rel="icon"   href="./Media/LOGOSDC.ico" type="ico" />
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pangolin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./scss/estilos.css">
 </head>
 <body>
     <header>
         <section class="banner">
-            <a href="./index.html" target="blank"><img src="./Media/LOGOSDC.png" alt="Logo Sad Duck Club" width="20%" class="logo"></a>
+            <a href="./index.html" target="blank"><img src="./Media/LOGOSDC.png" alt="Logo Sad Duck Club" width="15%" class="logo"></a>
         </section>
 </header>
-<nav class="menu">
-    <ul>
-        <li class="casa"><a href="./index.html">Inicio</a></li>
-        <li class="boton"><a href="./waffle.html">Waffles for Dinner</a></li>
-        <li class="boton"><a href="./colecciones.html">Colecciones</a></li>
-        <li class="boton"><a href="./bitacora.html">Bitacora del Pato Triste</a></li>
-        <li class="boton"><a href="./nco.html">Sad Duck 'n Co.</a></li>
-    </ul>
-</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #647966;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html" style="color: #fff1e0;"><img src="./Media/Home.png" alt="home" width="80px"> Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./waffle.html" style="color: #fff1e0;">Waffles for Dinner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./colecciones.html" style="color: #fff1e0;">Colecciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./bitacora.html" style="color: #fff1e0;">Bitácora del Pato Triste</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./nco.html" style="color: #fff1e0;">Sad Duck 'n Co</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <!--final encabezado y menu. comienzo cuerpo de pagina-->
-    <main>
+    <main class="container" style="background-color: #fff1e0;">
         <section>
             <h1>Bitácora del Pato Triste</h1>
             <p class="intro">gieurhgejngveiughrgjnxc,mnvgieurhgp</p>
         </section>
         <br><br>
-        <section class="bdpt">
-            <h4 class="fecha">Bitácora del Pato Triste 06/12/2021</h4>
-            <p class="entrada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi eveniet quos totam, debitis est quidem qui deserunt dolorum perspiciatis expedita harum fugit assumenda rerum maxime ab? Vel fugiat est labore debitis? Odit qui nemo explicabo optio eligendi</p>
-        </section>
-        <section class="bdpt">
-            <h4 class="fecha">Bitácora del Pato Triste 06/12/2021</h4>
-            <p class="entrada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi eveniet quos totam, debitis est quidem qui deserunt dolorum perspiciatis expedita harum fugit assumenda rerum maxime ab? Vel fugiat est labore debitis? Odit qui nemo explicabo optio eligendi. class="bdpt"</p>
-        </section>
-        <section class="bdpt">
-            <h4 class="fecha">Bitácora del Pato Triste 06/12/2021</h4>
-            <p class="entrada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam sapiente at quos amet temporibus debitis autem iure possimus vero.
-            </p>
-        </section>
-        <section class="bdpt">
-            <h4 class="fecha">Bitácora del Pato Triste 15/03/2022</h4>
-            <p class="entrada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi eveniet quos totam, debitis est quidem qui deserunt dolorum perspiciatis expedita harum fugit assumenda rerum maxime ab? Vel fugiat est labore debitis? Odit qui nemo explicabo optio eligendi aperiam ex, deserunt, similique beatae nulla ratione.</p>
-        </section>
+
+        <div id="list-example" class="list-group col-6">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">06/12/2021</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+          </div>
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0" class="col-6">
+            <h4 id="list-item-1">Bitácora del Pato Triste 06/12/2021</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi eveniet quos totam, debitis est quidem qui deserunt dolorum perspiciatis expedita harum fugit assumenda rerum maxime ab? Vel fugiat est labore debitis? Odit qui nemo explicabo optio eligendi</p>
+            <h4 id="list-item-2">Bitácora del Pato Triste 06/12/2021</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi eveniet quos totam, debitis est quidem qui deserunt dolorum perspiciatis expedita harum fugit assumenda rerum maxime ab? Vel fugiat est labore debitis? Odit qui nemo explicabo optio eligendi.</p>
+            <h4 id="list-item-3">Bitácora del Pato Triste 06/12/2021</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam sapiente at quos amet temporibus debitis autem iure possimus vero.</p>
+            <h4 id="list-item-4">Bitácora del Pato Triste 06/12/2021</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi eveniet quos totam, debitis est quidem qui deserunt dolorum perspiciatis expedita harum fugit assumenda rerum maxime ab? Vel fugiat est labore debitis? Odit qui nemo explicabo optio eligendi aperiam ex, deserunt, similique beatae nulla ratione.</p>
+          </div>
+        
+        
 
     </main>
     <div class="redhlp">
@@ -63,7 +82,7 @@
             <a href="https://www.youtube.com/channel/UCh6MEPJEnH_ZRhnSnTHCBgg"><img src="./Media/YouTube-Cottage Core (App Icon).png" alt="YouTube" width="45px" class="x"></a>
             <a href="https://www.twitch.tv/smolwafflecito" target="blank"><img src="./Media/Twitch.jpg" alt="Twitch" width="45px" class="x"></a>
             </section>
-        </div>
+    </div> 
 <hr>
 <footer>
     <form action="">
@@ -78,12 +97,12 @@
                 <input type="text" name="email" required>
             </div><br>
             <div>
-                
                 <label for="preferencia">Te interesa saber*</label><br>
-                    <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes <br>
-                    <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT <br>
-                    <input type="checkbox" name="preferencia" value="Mercancía">Nueva mercancía <br>
-                    <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>no actualizaciones</em>)
+                    <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes
+                    <br>
+                    <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT
+                    <br>
+                    <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>solo streams</em>)
             </div><br>
             <div>Acepta términos y condiciones
                 <input type="checkbox" name="acepta" value="1" required>
@@ -99,4 +118,6 @@
 </div>
 </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

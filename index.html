@@ -6,40 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido al Club|SDC</title>
     <link  rel="icon"   href="./Media/LOGOSDC.ico" type="ico" />
-    <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./scss/estilos.css">
 </head>
 <body>
     <header>
             <section class="banner">
-                <a href="./index.html" target="blank"><img src="./Media/LOGOSDC.png" alt="Logo Sad Duck Club" width="15%" class="logo"></a>
+                <a href="./index.html" target="blank"><img src="./Media/LOGOSDC.png" alt="Logo Sad Duck Club" class="logo"></a>
             </section>
     </header>
-    <nav class="menu">
-        <ul>
-            <li class="casa"><a href="./index.html">Inicio</a></li>
-            <li class="boton"><a href="./waffle.html">Waffles for Dinner</a></li>
-            <li class="boton"><a href="./colecciones.html">Colecciones</a></li>
-            <li class="boton"><a href="./bitacora.html">Bitacora del Pato Triste</a></li>
-            <li class="boton"><a href="./nco.html">Sad Duck 'n Co.</a></li>
-        </ul>
-    </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #647966;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" style="color: #fff1e0;"><img src="./Media/Home.png" alt="home" width="80px"> Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./waffle.html" style="color: #fff1e0;">Waffles for Dinner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./colecciones.html" style="color: #fff1e0;">Colecciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./bitacora.html" style="color: #fff1e0;">Bitácora del Pato Triste</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./nco.html" style="color: #fff1e0;">Sad Duck 'n Co</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 <!--final banner y menu. comienzo cuerpo de pagina-->
 
-    <main>
-        <div class="indexmain">
-            <section class="indext">
-                <h1>¡Bienvenidx al Club!</h1>
+    <main class="container" style="background-color: #fff1e0;">
+        <div class="row">
+            <img src="./Media/wafflecara.png" alt="cara" class="cara col-2">
+            <section class="indext col-6">
+                <h1 class="text-center">¡Bienvenidx al Club!</h1>
                 
-                <p class="intro">Espero que puedas pasarla bien aquí. Realmente le estoy poniendo ganas y corazón al hacer de mi comunidad algo agradable y sano para quienes me siguen.</p>
+                <p class="intro text-center">Espero que puedas pasarla bien aquí. Realmente le estoy poniendo ganas y corazón al hacer de mi comunidad algo agradable y sano para quienes me siguen.</p>
             </section>
-            <img src="./Media/wafflecara.png" alt="cara" class="cara" width="150px">
+            
     <!--final bienvenida-->
-            <section class="streamin">
+            
+<!--RECOMENDADOS-->
+    <aside class="recomendados col-4">
+        <h3>RECOMENDADOS</h3>
+        <ul>
+            <li><a href="https://co.pinterest.com/Waffle_Without_Syrup/patitos/"><img src="./Media/Pato.png" alt="flor" class="foto1" width="80px">Solo patitos</a></li>
+                <br>
+            <li><a href="https://youtube.com/playlist?list=PLkgpvEjrA6zC2z0RZZd3I_gNr8is6UZYz"><img src="./Media/Devil Duck.jpg" alt="pato malo" class="foto2" height="80px">Playlist Latina</a></li>
+                <br>
+            <li><a href="https://youtube.com/playlist?list=PLkgpvEjrA6zA2Ne3XMpHBbraziMgO6OpH">Playlist para Buenas Vibras</a></li>
+        </ul>
+                
+    </aside>
+
+            <section class="streamin col-8">
                 <h3 id="titstrm">Último Stream</h3>
                 <iframe src="https://player.twitch.tv/?video=1453551257&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" class="indexstream"></iframe>
                 <br>
@@ -47,30 +77,13 @@
                 <a href="https://www.twitch.tv/smolwafflecito" target="_blank" rel="noopener"><img src="./Media/banner twitch.png" alt="banner twitch" width="70%"></a>
             </section>
             <br><br><br>
-    <aside class="recomendados">
-        <h3 class="">RECOMENDADOS</h3>
-        <ul>
-            <li><a href="https://co.pinterest.com/Waffle_Without_Syrup/patitos/"><img src="./Media/Pato.png" alt="flor" class="foto1"><h2 class="txt1">Solo patitos</h2></a></li>
- 
-            <li><a href=""><img src="./Media/Devil Duck.jpg" alt="pato malo" class="foto2"><h2 class="txt2">Canal de Twitch</h2></a></li>
-
-            <li><a href=""></a></li>
-
-            <li></li>
-
-            <li></li>
-        </ul>
-                
-    </aside>
 
 
 
 
 
 
-
-
-            <section class="about">
+            <section class="about col-12">
                 <h3 class="sobre mi">Sobre mí</h3>
                 <img src="./Media/Waffle.png" alt="Waffle" width="100%" class="sobre waf">
                 <p class="sobre s">Hola! Soy Waffle, pero si estás aquí es porque eso ya lo sabes. Soy nueva en esto de crear contenido, pero me encanta hasta ahora.</p>
@@ -91,44 +104,47 @@
             <a href="https://www.instagram.com/wooffle.without.syrup/?hl=es"><img src="./Media/Instagram.jpg" alt="Instagram" width="45px" class="x"></a>
             <a href="https://discord.gg/n37xuMgV9K"><img src="./Media/Discord.jpg" alt="Discord" width="45px" class="x"></a>
             <a href="https://www.youtube.com/channel/UCh6MEPJEnH_ZRhnSnTHCBgg"><img src="./Media/YouTube-Cottage Core (App Icon).png" alt="YouTube" width="45px" class="x"></a>
-            <a href="https://www.twitch.tv/smolwafflecito" target="blank"><img src="./Media/Twitch.jpg" alt="Twitch" width="45px" class="x"></a>
+            <a href="https://www.twitch.tv/smolwafflecito" target="blank"><img src="./Media/Twitch.png" alt="Twitch" width="45px" class="x"></a>
             </section>
         </div>
     </main>
-        
-        <hr>
-    <footer>
-    <form action="">
-        <fieldset>
-            <legend>¿Quieres ser parte del club?</legend>
-            <div>
-                <label for="name">Nombre*</label>
-                <input type="text" name="name" required>
-            </div><br>
-            <div>
-                <label for="email">e-mail*</label>
-                <input type="text" name="email" required>
-            </div><br>
-            <div>
-                
-                <label for="preferencia">Te interesa saber*</label><br>
-                    <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes <br>
-                    <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT <br>
-                    <input type="checkbox" name="preferencia" value="Mercancía">Nueva mercancía <br>
-                    <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>no actualizaciones</em>)
-            </div><br>
-            <div>Acepta términos y condiciones
-                <input type="checkbox" name="acepta" value="1" required>
-            </div>
-            <div><br>
-                <input type="submit" name="Enviar" class="enviar">
-            </div>
-        </fieldset>
-    </form> 
-<div class="final">
-    <h4\>© Todos los derechos reservados</h4>
-    <h5>Contacto: sad.duck.club3@gmail.com</h5>
-</div>
+    <div class="hr"><hr /></div>
+    <footer class="container-fluid">
+    <div>
+        <form action="" >
+            <fieldset>
+                <legend>¿Quieres ser parte del club?</legend>
+                <div>
+                    <label for="name">Nombre*</label>
+                    <input type="text" name="name" required>
+                </div><br>
+                <div>
+                    <label for="email">e-mail*</label>
+                    <input type="text" name="email" required>
+                </div><br>
+                <div>
+                    <label for="preferencia">Te interesa saber*</label><br>
+                        <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes
+                        <br>
+                        <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT
+                        <br>
+                        <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>solo streams</em>)
+                </div><br>
+                <div>Acepta términos y condiciones
+                    <input type="checkbox" name="acepta" value="1" required>
+                </div>
+                <div><br>
+                    <input type="submit" name="Enviar" class="enviar">
+                </div>
+            </fieldset>
+        </form> 
+    <div class="final container-fluid">
+        <h6 class="col-6">© Todos los derechos reservados</h6>
+        <h6 class="col-6">Contacto: sad.duck.club3@gmail.com</h6>
+    </div>
+    </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
