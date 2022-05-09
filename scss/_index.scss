@@ -17,15 +17,39 @@
             padding: 5px;
                 li{
                     list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                        img{
+                            border: #4a230c solid 1px;
+                            border-radius: 5px;
+                        }
                 }
                 a{
                     text-decoration: none ;
                     color: #4a230c;
-                    font-size: 25px;
+                    font-size: 20px;
                     font-family: 'Coming Soon', cursive;
                 }
+                a:hover{
+                    color: $marron;
+                }
         }
-        
+        *::-webkit-scrollbar {
+            width: 15px;
+            height: 15px;
+          }
+          
+          *::-webkit-scrollbar-track {
+            background: #e2baa08c;
+            border: #e2baa0 2px solid;
+          }
+          
+          *::-webkit-scrollbar-thumb {
+            background-color: #c29077;
+            border-radius: 20px;
+
+          }
 }
 
 
@@ -34,6 +58,7 @@
         background-color: #e6cdaf;
         width: 60%;
         text-align: center;
+        margin-top: 20px;
         margin-right: 20%;
         margin-left: 20%;
         display: grid;
