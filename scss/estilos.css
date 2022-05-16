@@ -63,7 +63,10 @@
       grid-template-columns: 20% 80%;
   -ms-grid-rows: 1fr 2fr 4fr 2fr;
       grid-template-rows: 1fr 2fr 4fr 2fr;
-      grid-template-areas: "mi mi" "waf 1" "waf 2" "waf 3";
+      grid-template-areas: "mi mi"
+ "waf 1"
+ "waf 2"
+ "waf 3";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

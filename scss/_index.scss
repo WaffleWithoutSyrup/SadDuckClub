@@ -7,7 +7,7 @@
     height: 500px;
     overflow-y: scroll;
         h3{
-            background-color: #e6cdaf;
+            background-color: $crem3;
             border-bottom: #c29077 3px solid;
             text-align: left;
         }
@@ -51,7 +51,7 @@
 }
 .about{
     grid-area: about;
-        background-color: #e6cdaf;
+        background-color: $crem3;
         width: 60%;
         text-align: center;
         margin-top: 20px;
