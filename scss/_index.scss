@@ -8,7 +8,7 @@
     height: 500px;
     overflow-y: scroll;
         h3{
-            background-color: $marron;
+            background-color: #edd8bd;
             border-bottom: #c29077 3px solid;
             text-align: left;
         }
@@ -22,7 +22,7 @@
                     align-items: center;
                         img{
                             border: #4a230c solid 1px;
-                            border-radius: 5px;
+                            border-radius: 10px;
                         }
                 }
                 a{
@@ -32,7 +32,7 @@
                     font-family: 'Coming Soon', cursive;
                 }
                 a:hover{
-                    color: $marron;
+                    color: #4a230c;
                 }
         }
         *::-webkit-scrollbar {
@@ -52,7 +52,7 @@
 }
 .about{
     grid-area: about;
-        background-color: $crem3;
+        background-color: #e6cdaf;
         width: 60%;
         text-align: center;
         margin-top: 5px;

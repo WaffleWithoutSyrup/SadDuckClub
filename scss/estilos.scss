@@ -5,6 +5,7 @@
 }
 @import "index";
 @import "bitacora";
+@import "variables";
 
 body{
     background-color: $ver1;
@@ -42,6 +43,7 @@ nav{
         background-color: $ver3;
         padding: 5px;
         margin: 5px;
+        border-radius: 10px;
     }
     a:hover{
         color: $marron;
@@ -59,7 +61,7 @@ footer{
         background-color: $ver3;
         font-family: 'Coming Soon', cursive;
         font-weight: 200;
-        color: $cafe;
+        color: $cafe1;
         padding: 10px;
         margin-left: 30%;
         margin-right: 30%;
@@ -98,7 +100,7 @@ footer{
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: #18e934 #c2907759;
+  scrollbar-color: #e2baa0 #c2907759;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -117,3 +119,8 @@ footer{
   border-radius: 20px;
   border: 1px solid #c29077;
 }
+*::-webkit-scrollbar-button {
+    background-color: $cafe2;
+    border: $cafe1 1px solid;
+}
+

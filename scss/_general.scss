@@ -1,0 +1,54 @@
+#hongo{
+    display: none;
+}
+.redes{
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    justify-content: center;
+}
+.mooshie{
+    background-color: $cafe2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: $cafe1 2px solid;
+    border-bottom: none;
+}
+.social a, .mooshie label{
+    display: block;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 500ms ease;
+}
+.social a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50px;
+    height: 50px;
+    
+}
+#hongo:checked~ .social a{
+    opacity: 1;
+    visibility: visible;
+    background-color: $cafe2;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+}
+
+#hongo:checked~ .redes{
+    background-color: $cafe2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: $cafe1 2px solid;
+}
