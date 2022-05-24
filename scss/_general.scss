@@ -1,3 +1,22 @@
+.redhlp{
+/*boton de comentarios y ayuda*/
+    .ayuuda{
+        .ayuda{
+            position: fixed;
+            bottom: 10px;
+            left: 15px;
+        }
+        .ayuda:hover{
+            cursor: pointer;
+        }
+        .ayuda:hover::after{
+            content: "¿Tienes algún comentario?";
+            color: $cafe1;
+            font-size: 10px;
+        }
+
+    }
+/*css para boton de redes sociales*/
 #hongo{
     display: none;
 }
@@ -6,34 +25,38 @@
     bottom: 0px;
     right: 20px;
     justify-content: center;
+    .mooshie{
+        background-color: $cafe2;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: $cafe1 2px solid;
+        border-bottom: none;
+    }
+    .mooshie:hover{
+        cursor: pointer;
+    }
+    .social a, .mooshie label{
+        display: block;
+        height: 50px;
+        width: 60px;
+        line-height: 50px;
+        text-align: center;
+        transition: all 500ms ease;
+    }
+    .social a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(255, 255, 255, 0);
+        width: 50px;
+        height: 50px;
+        
+    }
 }
-.mooshie{
-    background-color: $cafe2;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: $cafe1 2px solid;
-    border-bottom: none;
-}
-.social a, .mooshie label{
-    display: block;
-    height: 50px;
-    width: 60px;
-    line-height: 50px;
-    text-align: center;
-    transition: all 500ms ease;
-}
-.social a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    opacity: 0;
-    visibility: hidden;
-    background-color: rgba(255, 255, 255, 0);
-    width: 50px;
-    height: 50px;
-    
-}
+
 #hongo:checked~ .social a{
     opacity: 1;
     visibility: visible;
@@ -45,10 +68,32 @@
     justify-content: center;
     align-content: center;  
 }
+}
 
-#hongo:checked~ .redes{
-    background-color: $cafe2;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: $cafe1 2px solid;
+/*formulatio de subscripcion*/
+form{
+    width: 500px;
+    background-color: $ver3;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        legend{
+            font-size: 30px;
+            font-family: 'Pangolin', cursive;
+            color: $marron;
+            text-align: center;
+        }
+        label{
+            font-family: 'Pangolin', cursive;
+            color: $marron;
+        }
+        input{
+            width: 350px;
+            border: none;
+            border-radius: 5px;
+            
+        }
 }

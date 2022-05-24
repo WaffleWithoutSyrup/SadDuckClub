@@ -77,10 +77,6 @@
   .about .b {
     grid-area: 4/2/5/3; }
 
-/*botones flotantes de redes*/
-#btn-mas {
-  display: none; }
-
 .bitacora .list-group .list-group-item {
   background-color: #ddbd98;
   font-family: 'Pangolin', cursive;
@@ -112,9 +108,63 @@
   -webkit-border-radius: 4px;
   border-radius: 1px; }
 
-/*botones flotantes de redes*/
-#btn-mas {
+/*css para boton de redes sociales*/
+#hongo {
   display: none; }
+
+.redes {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  justify-content: center; }
+  .redes .mooshie {
+    background-color: #b89271;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: #614226 2px solid;
+    border-bottom: none; }
+  .redes .mooshie:hover {
+    cursor: pointer; }
+  .redes .social a, .redes .mooshie label {
+    display: block;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 500ms ease; }
+  .redes .social a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    width: 50px;
+    height: 50px; }
+
+#hongo:checked ~ .social a {
+  opacity: 1;
+  visibility: visible;
+  background-color: #b89271;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+/*formulatio de subscripcion*/
+form {
+  width: 500px;
+  background-color: #243d28;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px; }
+
+@media screen and (max-width: 480px) {
+  body footer form {
+    width: 100%; } }
 
 body {
   background-color: #c7d0bf; }
@@ -125,10 +175,8 @@ body {
     font-family: 'Pangolin', cursive;
     color: #4a230c; }
   body p {
-    font-family: 'Coming Soon', cursive; }
-  body h4 {
-    font-family: 'Pangolin', cursive;
-    color: #4a230c; }
+    font-family: 'Coming Soon', cursive;
+    color: #614226; }
 
 header {
   text-align: center; }
@@ -159,31 +207,6 @@ footer {
   margin: 0;
   display: flex;
   flex-direction: column; }
-  footer form {
-    background-color: #7c8b76;
-    font-family: 'Coming Soon', cursive;
-    font-weight: 200;
-    color: #614226;
-    padding: 10px;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-    footer form legend {
-      font-family: 'Pangolin', cursive;
-      color: #4a230c; }
-    footer form fieldset {
-      margin: 5px;
-      padding: 20px; }
-    footer form .enviar {
-      color: #4a230c;
-      font-family: 'Pangolin', cursive;
-      background-color: #e6cdaf;
-      padding: 10px;
-      font-size: 15px;
-      letter-spacing: 2px;
-      border: #ddbd98 3px solid;
-      border-radius: 5px; }
   footer .final {
     background-color: #243d28;
     color: #edd8bd;

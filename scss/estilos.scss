@@ -6,6 +6,8 @@
 @import "index";
 @import "bitacora";
 @import "variables";
+@import "general";
+@import "mediaQ";
 
 body{
     background-color: $ver1;
@@ -19,10 +21,7 @@ body{
         }
         p{
             font-family: 'Coming Soon', cursive;
-        }
-        h4{
-            font-family: 'Pangolin', cursive;
-            color: $marron;
+            color: $cafe1;
         }
 }
 header{
@@ -57,46 +56,15 @@ footer{
     margin: 0;
     display: flex;
     flex-direction: column;
-    form{
-        background-color: $ver3;
-        font-family: 'Coming Soon', cursive;
-        font-weight: 200;
-        color: $cafe1;
-        padding: 10px;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        
-        legend{
-        font-family: 'Pangolin', cursive;
-        color: $marron;
+        .final{
+            background-color: $ver5;
+            color: #edd8bd;
+            font-family: 'Verdana', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
         }
-        fieldset{
-        margin: 5px;
-        padding: 20px;
-    
-        }
-        .enviar{
-        color: $marron;
-        font-family: 'Pangolin', cursive;
-        background-color: $crem3;
-        padding: 10px;
-        font-size: 15px;
-        letter-spacing: 2px;
-        border: $crem4 3px solid;
-        border-radius: 5px;
-        }
-    }
-    .final{
-        background-color: $ver5;
-        color: #edd8bd;
-        font-family: 'Verdana', sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
 }
 * {
   scrollbar-width: thin;

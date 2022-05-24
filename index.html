@@ -69,7 +69,7 @@
             </div>
             <!--RECOMENDADOS-->
             <div class="col-lg-3">
-                <aside class="recomendados col-4">
+                <aside class="recomendados col-lg-4 col-md-12 col-sm-12">
                     <h3>RECOMENDADOS</h3>
                     <ul>
                         <li><img src="./Media/pato.jpg" alt="pato" class="foto1" width="80px"><a href="https://co.pinterest.com/Waffle_Without_Syrup/patitos/" target="_blank">Solo patitos</a></li>
@@ -103,9 +103,9 @@
     
     </section>
         </div>
-    <div class="redhlp">
+    <div id="social_help">
         <section class="ayuuda">
-            <img src="./Media/Ayuda Carita.png" alt="Carita ayuda" width="100px" class="ayuda">
+            <img src="./Media/Ayuda_Carita.png" alt="Carita ayuda" width="100px" class="ayuda">
         </section>
         <div class="redes">
             <input type="checkbox" id="hongo">
@@ -125,9 +125,9 @@
 
 
         
-    </div>
+</div>
 </main>
-<footer class="container-fluid">
+<footer>
     <div>
         <form action="" >
             <fieldset>
@@ -135,32 +135,37 @@
                 <div>
                     <label for="name">Nombre*</label>
                     <input type="text" name="name" required>
-                </div><br>
+                </div>
                 <div>
                     <label for="email">e-mail*</label>
                     <input type="text" name="email" required>
-                </div><br>
-                <div>
-                    <label for="preferencia">Te interesa saber*</label><br>
-                        <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes
-                        <br>
-                        <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT
-                        <br>
-                        <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>solo streams</em>)
-                </div><br>
-                <div>Acepta términos y condiciones
-                    <input type="checkbox" name="acepta" value="1" required>
                 </div>
-                <div><br>
+                <div>
+                    <label for="preferencia">Te interesa saber*</label>
+                    <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes
+                    <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT
+                    <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>solo streams</em>)
+                </div>
+                <div>
+                    Acepta términos y condiciones<input type="checkbox" name="acepta" value="1" required>
+                </div>
+                <div>
                     <input type="submit" name="Enviar" class="enviar">
                 </div>
             </fieldset>
-        </form> 
+        </form>
+
+
+
+
+
+
     <div class="final">
         <h6>© Todos los derechos reservados</h6>
         <h6>Contacto: sad.duck.club3@gmail.com</h6>
     </div>
     </div>
+
 </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -187,6 +188,139 @@
   border-radius: 1px;
 }
 
+.redhlp {
+  /*boton de comentarios y ayuda*/
+  /*css para boton de redes sociales*/
+}
+
+.redhlp .ayuuda .ayuda {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+}
+
+.redhlp .ayuuda .ayuda:hover {
+  cursor: pointer;
+}
+
+.redhlp .ayuuda .ayuda:hover::after {
+  content: "¿Tienes algún comentario?";
+  color: #614226;
+  font-size: 10px;
+}
+
+.redhlp #hongo {
+  display: none;
+}
+
+.redhlp .redes {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redhlp .redes .mooshie {
+  background-color: #b89271;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: #614226 2px solid;
+  border-bottom: none;
+}
+
+.redhlp .redes .mooshie:hover {
+  cursor: pointer;
+}
+
+.redhlp .redes .social a, .redhlp .redes .mooshie label {
+  display: block;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.redhlp .redes .social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  width: 50px;
+  height: 50px;
+}
+
+.redhlp #hongo:checked ~ .social a {
+  opacity: 1;
+  visibility: visible;
+  background-color: #b89271;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/*formulatio de subscripcion*/
+form {
+  width: 500px;
+  background-color: #7c8b76;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form legend {
+  font-size: 30px;
+  font-family: 'Pangolin', cursive;
+  color: #4a230c;
+  text-align: center;
+}
+
+form label {
+  font-family: 'Pangolin', cursive;
+  color: #4a230c;
+}
+
+form input {
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  body footer form {
+    width: 100%;
+  }
+}
+
 body {
   background-color: #c7d0bf;
 }
@@ -203,11 +337,7 @@ body h3 {
 
 body p {
   font-family: 'Coming Soon', cursive;
-}
-
-body h4 {
-  font-family: 'Pangolin', cursive;
-  color: #4a230c;
+  color: #614226;
 }
 
 header {
@@ -251,39 +381,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-footer form {
-  background-color: #7c8b76;
-  font-family: 'Coming Soon', cursive;
-  font-weight: 200;
-  color: #614226;
-  padding: 10px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-footer form legend {
-  font-family: 'Pangolin', cursive;
-  color: #4a230c;
-}
-
-footer form fieldset {
-  margin: 5px;
-  padding: 20px;
-}
-
-footer form .enviar {
-  color: #4a230c;
-  font-family: 'Pangolin', cursive;
-  background-color: #e6cdaf;
-  padding: 10px;
-  font-size: 15px;
-  letter-spacing: 2px;
-  border: #ddbd98 3px solid;
-  border-radius: 5px;
 }
 
 footer .final {
