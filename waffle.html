@@ -71,56 +71,65 @@
             </section>
     </div>
 
-    <div class="redhlp">
-        <section class="ayuuda">
-            <img src="./Media/Ayuda_Carita.png" alt="Carita ayuda" width="100px" class="ayuda">
-            </section>
-            <div class="redes">
-                <input type="checkbox" id="hongo">
-                <div class="social">
-                  <a href="https://www.twitch.tv/smolwafflecito" target="_blank"><img src="./Media/Twitch.png" alt="Twitch" width="45px" class="twitch"></a>
+    <div id="social_help">
+      <section class="ayuuda">
+          <img src="./Media/Ayuda_Carita.png" alt="Carita ayuda" class="ayuda">
+      </section>
+      <div class="redes">
+          <input type="checkbox" id="hongo">
+          <div class="social">
+            <a href="https://www.twitch.tv/smolwafflecito" target="_blank"><img src="./Media/Twitch.png" alt="Twitch" width="45px" class="twitch"></a>
+      
+            <a href="https://discord.gg/n37xuMgV9K" target="_blank"><img src="./Media/discord.png" alt="Discord" width="45px" class="discrd"></a>
+      
+            <a href="https://www.youtube.com/channel/UCh6MEPJEnH_ZRhnSnTHCBgg" target="_blank"><img src="./Media/YouTube-Cottage Core (App Icon).png" alt="YouTube" width="45px" class="youtub"></a>
             
-                  <a href="https://discord.gg/n37xuMgV9K" target="_blank"><img src="./Media/Discord.jpg" alt="Discord" width="45px" class="discrd"></a>
-            
-                  <a href="https://www.youtube.com/channel/UCh6MEPJEnH_ZRhnSnTHCBgg" target="_blank"><img src="./Media/YouTube-Cottage Core (App Icon).png" alt="YouTube" width="45px" class="youtub"></a>
-                  
-                  <a href="https://www.instagram.com/wooffle.without.syrup/?hl=es" target="_blank"><img src="./Media/Instagram.jpg" alt="Instagram" width="45px" class="insta"></a>
-                </div>
-                <div class="btn-mas">
-                  <label for="hongo" class="mooshie"><img src="./Media/Mooshie.png" alt="hongo-redes" width="60px"></label>
-                </div>
-            </div> 
-        </div>
+            <a href="https://www.instagram.com/wooffle.without.syrup/?hl=es" target="_blank"><img src="./Media/Instagram.jpg" alt="Instagram" width="45px" class="insta"></a>
+          </div>
+          <div class="btn-mas">
+            <label for="hongo" class="mooshie"><img src="./Media/Mooshie.png" alt="hongo-redes" width="60px"></label>
+          </div>
+      </div> 
+
+
+      
+</div>
 </main>
 <hr>
 <footer>
-    <form action="">
-        <fieldset>
-            <legend>¿Quieres ser parte del club?</legend>
-            <div>
-                <label for="name">Nombre*</label>
-                <input type="text" name="name" required>
-            </div><br>
-            <div>
-                <label for="email">e-mail*</label>
-                <input type="text" name="email" required>
-            </div><br>
-            <div>
-                <label for="preferencia">Te interesa saber*</label><br>
-                    <input type="checkbox" name="preferencia" value="Redes">Nuevo contenido en redes
-                    <br>
-                    <input type="checkbox" name="preferencia" value="Actualización">Actualización de la BdPT
-                    <br>
-                    <input type="checkbox" name="preferencia" value="Vibe">Tener buenas vibras (<em>solo streams</em>)
-            </div><br>
-            <div>Acepta términos y condiciones
-                <input type="checkbox" name="acepta" value="1" required>
-            </div>
-            <div><br>
-                <input type="submit" name="Enviar" class="enviar">
-            </div>
-        </fieldset>
-    </form> 
+    <div class="formulario">
+      <form action="">
+          <fieldset>
+              <legend>¿Quieres ser parte del club?</legend>
+              <div class="texto">
+                  <label for="name">Nombre*</label>
+                  <input type="text" name="name" required>
+              <br><br>
+                  <label for="email">e-mail*</label>
+                  <input type="email" name="email" required>
+              </div><br>
+              <div class="interes">
+                  <h4>Te interesa saber*</h4>
+                      <div class="preferencia">
+                          <input type="checkbox" name="new_stream" value="Vibe">
+                          <label for="newstream">Nuevo stream</label>
+                      </div>
+                      <div class="preferencia">
+                          <input type="checkbox" name="new_social" value="Redes">
+                          <label for="new_social">Nuevo contenido en redes</label>
+                      </div>
+                      <div class="preferencia">
+                          <input type="checkbox" name="new_bdpt" value="Actualización">
+                          <label for="new_bdpt">Actualización de la BdPT</label>
+                      </div>
+                      
+              </div>
+              <div>
+                  <input type="submit" name="Enviar" class="enviar">
+              </div>
+          </fieldset>
+      </form>
+    </div> 
 <div class="final">
     <h6>© Todos los derechos reservados</h6>
     <h6>Contacto: sad.duck.club3@gmail.com</h6>

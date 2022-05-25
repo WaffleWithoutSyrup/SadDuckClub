@@ -188,32 +188,36 @@
   border-radius: 1px;
 }
 
-.redhlp {
+/*Botones de comentarios y redes sociales*/
+#social_help {
   /*boton de comentarios y ayuda*/
+  background-color: #ffffff00;
   /*css para boton de redes sociales*/
 }
 
-.redhlp .ayuuda .ayuda {
+#social_help .ayuuda .ayuda {
   position: fixed;
-  bottom: 10px;
+  bottom: 25px;
   left: 15px;
+  width: 100px;
 }
 
-.redhlp .ayuuda .ayuda:hover {
+#social_help .ayuuda .ayuda:hover {
   cursor: pointer;
 }
 
-.redhlp .ayuuda .ayuda:hover::after {
-  content: "¿Tienes algún comentario?";
+#social_help .ayuuda .ayuda:hover::after {
+  content: '¿Tienes algún comentario?';
   color: #614226;
   font-size: 10px;
+  background-color: black;
 }
 
-.redhlp #hongo {
+#social_help #hongo {
   display: none;
 }
 
-.redhlp .redes {
+#social_help .redes {
   position: fixed;
   bottom: 0px;
   right: 20px;
@@ -222,7 +226,7 @@
           justify-content: center;
 }
 
-.redhlp .redes .mooshie {
+#social_help .redes .mooshie {
   background-color: #b89271;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -230,11 +234,11 @@
   border-bottom: none;
 }
 
-.redhlp .redes .mooshie:hover {
+#social_help .redes .mooshie:hover {
   cursor: pointer;
 }
 
-.redhlp .redes .social a, .redhlp .redes .mooshie label {
+#social_help .redes .social a, #social_help .redes .mooshie label {
   display: block;
   height: 50px;
   width: 60px;
@@ -244,7 +248,7 @@
   transition: all 500ms ease;
 }
 
-.redhlp .redes .social a {
+#social_help .redes .social a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +268,7 @@
   height: 50px;
 }
 
-.redhlp #hongo:checked ~ .social a {
+#social_help #hongo:checked ~ .social a {
   opacity: 1;
   visibility: visible;
   background-color: #b89271;
@@ -287,6 +291,7 @@
 /*formulatio de subscripcion*/
 form {
   width: 500px;
+  height: 400px;
   background-color: #7c8b76;
   padding: 10px 20px;
   -webkit-box-sizing: border-box;
@@ -310,14 +315,57 @@ form label {
 }
 
 form input {
-  width: 350px;
+  width: 100%;
   border: none;
   border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #fff1e0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #243d28;
+}
+
+form .interes h4 {
+  font-family: 'Coming Soon', cursive;
+  color: #4a230c;
+}
+
+form .interes input {
+  text-align: left;
+  width: 20px;
+  border-radius: 5px;
+  border: none;
+  background-image: none;
+}
+
+form .interes label {
+  color: #614226;
+}
+
+form .enviar {
+  width: 60px;
+  text-align: center;
+  background-color: #e6cdaf;
+  font-family: 'Pangolin', cursive;
+  color: #4a230c;
+  position: relative;
+  left: 350px;
+  bottom: 25px;
+}
+
+form .enviar:hover {
+  cursor: pointer;
+}
+
+form .enviar:hover::after {
+  content: "holi";
 }
 
 @media screen and (max-width: 480px) {
   body footer form {
     width: 100%;
+  }
+  body footer form .enviar {
+    left: 200px;
   }
 }
 
@@ -383,6 +431,15 @@ footer {
           flex-direction: column;
 }
 
+footer .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer .final {
   background-color: #243d28;
   color: #edd8bd;
@@ -401,15 +458,15 @@ footer .final {
           align-items: center;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #e2baa0 #c2907759;
-}
-
-/* Works on Chrome, Edge, and Safari */
+/*scrollbar*/
 *::-webkit-scrollbar {
   width: 15px;
   height: 15px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e2baa0 #c2907759;
 }
 
 *::-webkit-scrollbar-track {

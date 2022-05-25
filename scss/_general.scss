@@ -1,18 +1,22 @@
-.redhlp{
+/*Botones de comentarios y redes sociales*/
+#social_help{
 /*boton de comentarios y ayuda*/
+    background-color: #ffffff00;
     .ayuuda{
         .ayuda{
             position: fixed;
-            bottom: 10px;
+            bottom: 25px;
             left: 15px;
+            width: 100px;
         }
         .ayuda:hover{
             cursor: pointer;
         }
         .ayuda:hover::after{
-            content: "¿Tienes algún comentario?";
+            content: '¿Tienes algún comentario?';
             color: $cafe1;
             font-size: 10px;
+            background-color: black;
         }
 
     }
@@ -73,6 +77,7 @@
 /*formulatio de subscripcion*/
 form{
     width: 500px;
+    height: 400px;
     background-color: $ver3;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -91,9 +96,44 @@ form{
             color: $marron;
         }
         input{
-            width: 350px;
+            width: 100%;
             border: none;
             border-radius: 5px;
-            
+            margin-bottom: 15px;
+            background-color: $crem1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: $ver5;
+        }
+        .interes{
+            h4{
+                font-family: 'Coming Soon', cursive;
+                color: $marron;
+            }
+            input{
+                text-align: left;
+                width: 20px;
+                border-radius: 5px;
+                border: none;
+                background-image: none;
+            }
+            label{
+                color: $cafe1;
+            }
+        }
+        .enviar{
+            width: 60px;
+            text-align: center;
+            background-color: $crem3;
+            font-family: 'Pangolin', cursive;
+            color: $marron;
+            position: relative;
+            left: 350px;
+            bottom: 25px;
+        }
+        .enviar:hover{
+            cursor: pointer;
+        }
+        .enviar:hover::after{
+            content: "holi";
         }
 }
