@@ -7,13 +7,14 @@
 }
 
 .recomendados {
+  margin-top: 20px;
+  margin-bottom: 20px;
   top: 125px;
   background-color: #e6cdaf;
   border: #c29077 3px solid;
   border-radius: 5px;
   width: 300px;
   height: 500px;
-  overflow-y: scroll;
 }
 
 .recomendados h3 {
@@ -25,6 +26,7 @@
 .recomendados ul {
   background-color: #edd8bd;
   padding: 5px;
+  overflow-y: scroll;
 }
 
 .recomendados ul li {
@@ -172,20 +174,46 @@
   color: #edd8bd !important;
 }
 
-.bitacora .list-group .scrollspy-example {
-  height: 0px;
-  overflow-y: scroll;
-  border: 2px #614226 solid;
+.bitacora .entradabt {
+  background-color: #edd8bd;
+  border: 2px #ddbd98 solid;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 4px 4px #b89271;
+          box-shadow: 0 4px 4px #b89271;
 }
 
-.bitacora .list-group .scrollspy-example::-webkit-scrollbar {
+.bitacora .entradabt .scrollspy-example {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.bitacora .entradabt .scrollspy-example .bdpt {
+  margin: 10px;
+  background-color: #fff1e0;
+  padding: 5px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.11);
+}
+
+.bitacora .entradabt .scrollspy-example::-webkit-scrollbar {
   width: 10px;
 }
 
-.bitacora .list-group .scrollspy-example::-webkit-scrollbar-track {
+.bitacora .entradabt .scrollspy-example::-webkit-scrollbar-button {
+  width: 10px;
+  border-radius: 2px;
+}
+
+.bitacora .entradabt .scrollspy-example::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px #c7d0bf;
   box-shadow: 0 4px 4px #b89271;
   border-radius: 1px;
+}
+
+/*reproductores*/
+.reproductor iframe {
+  width: 70%;
 }
 
 /*Botones de comentarios y redes sociales*/
@@ -361,11 +389,67 @@ form .enviar:hover::after {
 }
 
 @media screen and (max-width: 480px) {
+  body .reproductor iframe {
+    width: 100%;
+    height: 90%;
+  }
+  body .recomendados {
+    width: 90%;
+    height: auto;
+  }
+  body .recomendados h3 {
+    background-color: #edd8bd;
+  }
+  body .recomendados ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  body .recomendados ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body .about {
+    width: 90%;
+    margin: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   body footer form {
     width: 100%;
   }
   body footer form .enviar {
-    left: 200px;
+    left: 250px;
+    bottom: 30px;
+  }
+  body footer .final {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -376,6 +460,7 @@ body {
 body h1 {
   font-family: 'Pangolin', cursive;
   color: #4a230c;
+  text-align: center;
 }
 
 body h3 {
@@ -383,9 +468,18 @@ body h3 {
   color: #4a230c;
 }
 
+body h4 {
+  font-family: 'Pangolin', cursive;
+  color: #4a230c;
+}
+
 body p {
   font-family: 'Coming Soon', cursive;
   color: #614226;
+}
+
+body .intro {
+  text-align: center;
 }
 
 header {
@@ -417,6 +511,7 @@ nav a:hover {
 
 main {
   padding-top: 25px;
+  background-color: #fff1e0;
 }
 
 footer {

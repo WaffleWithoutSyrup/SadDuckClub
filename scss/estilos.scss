@@ -14,14 +14,23 @@ body{
         h1{
             font-family: 'Pangolin', cursive;
             color: $marron;
+            text-align: center;
         }
         h3{
+            font-family: 'Pangolin', cursive;
+            color: $marron;
+        }
+        h4{
             font-family: 'Pangolin', cursive;
             color: $marron;
         }
         p{
             font-family: 'Coming Soon', cursive;
             color: $cafe1;
+        }
+        .intro{
+            text-align: center;
+            
         }
 }
 header{
@@ -50,6 +59,7 @@ nav{
 }
 main{
     padding-top: 25px;
+    background-color: $crem1;
 }
 footer{
     background-color: $ver4;

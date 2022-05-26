@@ -1,12 +1,13 @@
 .recomendados{
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
     top: 125px;
     background-color: #e6cdaf;
     border: #c29077 3px solid;
     border-radius: 5px;
     width: 300px;
     height: 500px;
-    overflow-y: scroll;
+    
         h3{
             background-color: #edd8bd;
             border-bottom: #c29077 3px solid;
@@ -15,6 +16,8 @@
         ul{
             background-color: #edd8bd;
             padding: 5px;
+            overflow-y: scroll;
+            
                 li{
                     list-style: none;
                     display: flex;
