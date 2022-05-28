@@ -465,6 +465,7 @@ body h1 {
 body h3 {
   font-family: 'Pangolin', cursive;
   color: #4a230c;
+  margin-left: 60px;
 }
 
 body h4 {
@@ -559,7 +560,7 @@ footer .final {
 }
 
 * {
-  scrollbar-width: thin;
+  scrollbar-width: 10px;
   scrollbar-color: #e2baa0 #c2907759;
 }
 
@@ -577,5 +578,7 @@ footer .final {
 *::-webkit-scrollbar-button {
   background-color: #b89271;
   border: #614226 1px solid;
+  width: 10px;
+  height: 16px;
 }
 /*# sourceMappingURL=estilos.css.map */

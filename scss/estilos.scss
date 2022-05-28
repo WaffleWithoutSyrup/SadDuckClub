@@ -20,6 +20,7 @@ body{
         h3{
             font-family: 'Pangolin', cursive;
             color: $marron;
+            margin-left: 60px;
         }
         h4{
             font-family: 'Pangolin', cursive;
@@ -89,7 +90,7 @@ footer{
   height: 15px;
 }
 * {
-  scrollbar-width: thin;
+  scrollbar-width: 10px;
   scrollbar-color: #e2baa0 #c2907759;
 }
 *::-webkit-scrollbar-track {
@@ -105,5 +106,7 @@ footer{
 *::-webkit-scrollbar-button {
     background-color: $cafe2;
     border: $cafe1 1px solid;
+    width: 10px;
+    height: 16px;
 }
 
