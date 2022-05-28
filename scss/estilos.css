@@ -13,7 +13,7 @@
   background-color: #e6cdaf;
   border: #c29077 3px solid;
   border-radius: 5px;
-  width: 300px;
+  width: auto;
   height: 500px;
 }
 
@@ -27,6 +27,7 @@
   background-color: #edd8bd;
   padding: 5px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .recomendados ul li {
@@ -424,9 +425,7 @@ form .enviar:hover::after {
   }
   body .about {
     width: 90%;
-    margin: 0;
-    -ms-flex-item-align: center;
-        align-self: center;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -5,7 +5,7 @@
     background-color: #e6cdaf;
     border: #c29077 3px solid;
     border-radius: 5px;
-    width: 300px;
+    width: auto;
     height: 500px;
     
         h3{
@@ -17,6 +17,7 @@
             background-color: #edd8bd;
             padding: 5px;
             overflow-y: scroll;
+            overflow-x: hidden;
             
                 li{
                     list-style: none;
